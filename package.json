@@ -2,11 +2,10 @@
   "name": "manage-landing-page-master",
   "version": "1.0.0",
   "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
-  "default": "index.html",
+  "source": "index.html",
   "scripts": {
     "dev": "parcel serve *.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --dist-dir output",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
