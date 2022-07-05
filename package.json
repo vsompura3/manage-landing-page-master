@@ -2,9 +2,10 @@
   "name": "manage-landing-page-master",
   "version": "1.0.0",
   "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
   "default": "index.html",
   "scripts": {
-    "dev": "parcel serve index.html",
+    "dev": "parcel serve *.html",
     "build": "parcel build index.html",
     "deploy": "npm run build && gh-pages -d dist"
   },
@@ -18,7 +19,8 @@
   },
   "@parcel/transformer-css": {
     "drafts": {
-      "nesting": true
+      "nesting": true,
+      "customMedia": true
     }
   }
 }
