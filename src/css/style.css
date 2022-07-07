@@ -5,17 +5,13 @@
 
 :root {
   /* colors */
-  --brand-1: hsl(12, 88%, 59%); /* accent-400 */
-  --brand-2: hsl(13, 100%, 96%); /* accent-100 */
-  --surface-1: hsl(0, 0%, 98%);
-  --surface-2: hsl(233, 12%, 13%); /* neutral-100 */
-  --text-1: hsl(227, 12%, 61%);
-  --text-2: hsl(228, 39%, 23%); /* primary-400 */
+  --clr-accent-400: hsl(12, 88%, 59%);
+  --clr-accent-100: hsl(13, 100%, 96%);
 
-  --clr-accent-400: var(--brand-1);
-  --clr-accent-100: var(--brand-2);
-  --clr-neutral-100: var(--surface-2);
-  --clr-primary-400: var(--text-2);
+  --clr-primary-400: hsl(228, 39%, 23%);
+
+  --clr-neutral-100: hsl(232, 12%, 13%);
+  --clr-neutral-900: hsl(0 0% 0%);
 
   /* typography */
   --font-sans: 'Be Vietnam Pro', sans-serif;
@@ -77,7 +73,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  min-block-size: 100%;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: var(--ff-body);
@@ -103,15 +99,15 @@ a:not([class]) {
 img,
 picture,
 svg {
-  max-width: 100%;
+  max-inline-size: 100%;
   display: block;
 }
 
 /* Content thats not visible but read by screen-readers */
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  inline-size: 1px;
+  block-size: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;

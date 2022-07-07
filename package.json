@@ -5,11 +5,11 @@
   "source": "index.html",
   "scripts": {
     "dev": "parcel serve *.html",
-    "build": "parcel build index.html --dist-dir output",
+    "build": "parcel build index.html --dist-dir dist",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vaibhav Sompura",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.2",
