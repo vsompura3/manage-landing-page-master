@@ -4,22 +4,19 @@
   "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
   "source": "index.html",
   "scripts": {
-    "dev": "parcel serve *.html",
-    "build": "parcel build index.html --dist-dir dist",
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build --base=./",
+    "serve": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "Vaibhav Sompura",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.2",
+    "eslint": "^8.20.0",
     "gh-pages": "^4.0.0",
-    "parcel": "^2.6.2"
-  },
-  "@parcel/transformer-css": {
-    "drafts": {
-      "nesting": true,
-      "customMedia": true
-    }
+    "postcss-preset-env": "^7.7.2",
+    "vite": "^3.0.2"
   }
 }
